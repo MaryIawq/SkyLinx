@@ -12,8 +12,8 @@ import App from './App.vue'
 
 // Composables
 import { createApp } from 'vue'
-
-const app = createApp(App)
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
+const app = createApp(App).use(autoAnimatePlugin)
 registerPlugins(app)
 
 app.mount('#app')
