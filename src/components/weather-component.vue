@@ -8,6 +8,7 @@ const emit = defineEmits([
 const props = defineProps([
   'currentCityName',
   'currentCityWeather',
+  'weekCityWeather'
 ])
 const showComponent = ref(false);
 watch(() => props.currentCityWeather, (newValue) => {
@@ -33,9 +34,9 @@ const changeCity = () => {
         </div>
       </div>
       <div class="mid__current__weather">
-          <p style="font-size: 70px;">{{ props.currentCityWeather.main.temp }}°C</p>
+        <p style="font-size: 70px;">{{ Math.round(props.currentCityWeather.main.temp) }}°C</p>
         <p style="font-weight: 400; font-size: 30px; text-align: center;">feels like <br>
-          {{ props.currentCityWeather.main.feels_like }}°C</p>
+          {{ Math.round(props.currentCityWeather.main.feels_like) }}°C</p>
       </div>
       <div class="bot__info">
 
@@ -68,27 +69,13 @@ const changeCity = () => {
             <img style="width: 60px" src="../../public/wind-icon.png">
             <div class="info__component__text">
               <p>wind speed</p>
-              <p>{{ props.currentCityWeather.wind.speed }} m/s</p>
+              <p>{{ Math.round(props.currentCityWeather.wind.speed) }} m/s</p>
             </div>
           </div>
         </div>
 
 
       </div>
-    </div>
-    <div class="week_weather">
-      <img style="width: 50px; height: 50px" src="../../public/arrow.png">
-
-      <div class="week__card">
-        <p>today</p>
-        <div class="mid__week__card">
-          <img style="width: 40px" src="../../public/sunny.png">
-          <p style="font-size: 30px">11°c</p>
-        </div>
-      </div>
-
-
-      <img style="width: 50px; height: 50px" src="../../public/arrowr.png">
     </div>
   </div>
 
@@ -180,34 +167,6 @@ p {
 
 .info__component {
   display: flex;
-
 }
 
-.week_weather {
-  margin-top: 30px;
-
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.22);
-  border-radius: 50px;
-  border: #FFFFFF 4px solid;
-}
-
-.week__card {
-  margin-right: 2px;
-  margin-left: 2px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: #FFFFFF 2px solid;
-}
-
-.mid__week__card {
-  display: flex;
-  align-items: center;
-}
 </style>
