@@ -5,7 +5,9 @@
     "dev": "vite --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
@@ -26,6 +28,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.19.0",
+    "gh-pages": "^6.1.1",
     "pinia": "^2.1.0",
     "sass": "^1.69.0",
     "unplugin-fonts": "^1.1.0",
