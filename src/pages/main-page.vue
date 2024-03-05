@@ -94,18 +94,18 @@ document.addEventListener('mousemove', e => {
               <h2 class="">always with you</h2>
             </div>
           </div>
-          <div class="layers__item layer-2" style="background-image: url(/src/assets/layers/sakuraL2.png)">
+          <div class="layers__item layer-2" style="background-image: url(/sakuraL2.png)">
           </div>
-          <div class="layers__item layer-3" style="background-image: url(/src/assets/layers/layer3.png)">
+          <div class="layers__item layer-3" style="background-image: url(/layer3.png)">
           </div>
-          <div class="layers__item layer-4" style="background-image: url(/src/assets/layers/layer4.png)">
+          <div class="layers__item layer-4" style="background-image: url(/layer4.png)">
           </div>
-          <div class="layers__item layer-5" style="background-image: url(/src/assets/layers/greenTreeL5.png)">
+          <div class="layers__item layer-5" style="background-image: url(/greenTreeL5.png)">
 
           </div>
           <div class="layers__item layer-6">
           </div>
-          <div class="layers__item layer-7" style="background-image: url(/src/assets/layers/layer7.png)">
+          <div class="layers__item layer-7" style="background-image: url(/layer7.png)">
           </div>
           <div class="layers__item layer-8">
           </div>
