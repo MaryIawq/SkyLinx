@@ -1,6 +1,6 @@
 ## SkyLinx
 
-##GitHub Pages: https://maryiawq.github.io/SkyLinx/
+## GitHub Pages: https://maryiawq.github.io/SkyLinx/
 
 Application with parallax effect. Gets location data and displays the current weather. The application also features the ability to select a city from a list.
 ![weather2](https://github.com/MaryIawq/SkyLinx/assets/152361912/976641bf-8163-4eac-b14d-ff9339dbbbd1)
